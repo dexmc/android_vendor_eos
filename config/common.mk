@@ -59,6 +59,16 @@ PRODUCT_COPY_FILES += \
     vendor/eos/prebuilt/common/vendor/lib/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib/mediadrm/libdrmclearkeyplugin.so \
     vendor/eos/prebuilt/common/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so
 
+# Add HDCP files
+PRODUCT_COPY_FILES += \
+    vendor/eos/prebuilt/common/etc/DxHDCP.cfg:system/etc/DxHDCP.cfg \
+    vendor/eos/prebuilt/common/lib/libDxHdcp.so:system/lib/libDxHdcp.so \
+    vendor/eos/prebuilt/common/vendor/firmware/discretix/dxhdcp2.b00:system/vendor/firmware/discretix/dxhdcp2.b00 \
+    vendor/eos/prebuilt/common/vendor/firmware/discretix/dxhdcp2.b01:system/vendor/firmware/discretix/dxhdcp2.b01 \
+    vendor/eos/prebuilt/common/vendor/firmware/discretix/dxhdcp2.b02:system/vendor/firmware/discretix/dxhdcp2.b02 \
+    vendor/eos/prebuilt/common/vendor/firmware/discretix/dxhdcp2.b03:system/vendor/firmware/discretix/dxhdcp2.b03 \
+    vendor/eos/prebuilt/common/vendor/firmware/discretix/dxhdcp2.b03:system/vendor/firmware/discretix/dxhdcp2.mdt
+
 # Extra packages
 PRODUCT_PACKAGES += \
     AudioFX \
@@ -67,7 +77,7 @@ PRODUCT_PACKAGES += \
     Eleven \
     Launcher3 \
     LockClock \
-    OTACenter 
+    OTACenter
 
 # Busybox
 PRODUCT_PACKAGES += \
